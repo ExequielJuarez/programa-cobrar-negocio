@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Carga</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header onclick="window.location.href='/'">
+        <h1 class="h1Header">Santa Rita </h1>
+    </header>
+
+    <main>
+        <!-- Botón de Cobrar con redirección -->
+        <button onclick="window.location.href='/cobrar'">
+            <h1>Cobrar</h1>
+        </button>
+
+        
+
+        <button onclick="window.location.href='/agregar'">
+            <h1>Agregar Producto</h1>
+        </button>
+
+    </main>
+
+    <footer>
+        <h2>Listado de productos</h2>
+        <% productos.forEach(producto => { %>
+        <section class="contprecio">
+            <h3>nombre: <%= producto.nombre %></h3>
+            <h3>precio: <%= producto.precio %></h3>
+            <h3>stock: <%= producto.stock %></h3>
+
+            <section class="contBotones">
+
+                <form class="boton" action="/editar/<%= producto.id %>" method="GET">
+                    <button class="btn1">Editar</button>
+                </form>
+    
+                <form class="boton" action="/eliminar/<%= producto.id %>" method="POST" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este producto?');">
+                    <button class="btn2">Eliminar</button>
+                </form>
+            </section>
+        </section>
+        <% }); %>
+        
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

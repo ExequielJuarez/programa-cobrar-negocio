@@ -1,0 +1,82 @@
+.h1Header{
+    background-color: red;
+    color: azure;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
+body{
+    background-color: red;
+}
+main{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+main button{
+    background-color: red;
+    color: azure;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    cursor: pointer;
+    
+    
+}
+
+.sectionSumar{
+    border: 1px solid white;
+    color: azure;
+    font-size: 10px;
+}
+
+h2{
+    border-top: 2px solid azure;
+    color: azure;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+h3{
+    margin: 3px;
+    color: azure;
+    font-size: 15px;
+}
+
+.contprecio{
+    border-top: 1px solid azure;
+    border-bottom: 1px solid azure;
+}
+
+.contBotones{
+    width: 100%;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.boton{
+    left: 20px;
+    width: 8%;
+
+}
+.btn1{
+    font-size: 12px;
+    padding: 5px;
+    border: 1px solid rgb(239, 241, 241);
+    border-radius: 15%;
+    background-color: rgb(50, 224, 44);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.btn2{
+    font-size: 12px;
+    padding: 5px;
+    border: 1px solid rgb(248, 248, 248);
+    border-radius: 15%;
+    background-color: rgb(239, 57, 12);
+    color: azure;
+    cursor: pointer;
+}

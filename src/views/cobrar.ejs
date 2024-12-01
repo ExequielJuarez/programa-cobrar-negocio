@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa Rita</title>
+    <link rel="stylesheet" href="css/cobrar.css">
+</head>
+<body>
+    <header onclick="window.location.href='/'">
+        <h1 class="h1Header">Santa Rita </h1>
+    </header>
+
+    <main>
+        
+        <!-- Nueva sección para ingresar el código del producto -->
+        <section class="sectionCodigo">
+            <input type="text" id="codigoProducto" placeholder="Escanea o ingresa el código" />
+            <button id="buscarProducto">Buscar Producto</button>
+        </section>
+
+        <!-- Sección total -->
+        <section class="contTotal">
+            <section class="total">
+                <h2>Total: $<span id="total">0.00</span></h2>
+            </section>
+        </section>
+
+        <!-- Sección para los productos encontrados -->
+        <section class="cajaSections">
+            <section class="sectionSumar">
+                <section class="titulo">
+                    <h3>Producto</h3>
+                </section>
+                <div id="productoNombreContainer"></div> <!-- Aquí se irán apilando los nombres de los productos -->
+            </section>
+            <section class="sectionSumar">
+                <section class="titulo">
+                    <h3>Precio</h3>
+                </section>
+                <div id="productoPrecioContainer"></div> <!-- Aquí se irán apilando los precios -->
+            </section>
+        </section>
+
+        
+    </main>
+
+    <!-- Vincula el archivo JavaScript al final del cuerpo del documento -->
+    <script src="js/cobrar.js"></script>
+</body>
+</html>

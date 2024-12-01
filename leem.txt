@@ -1,0 +1,13 @@
+CREATE DATABASE shop;
+USE shop;
+
+CREATE TABLE Sales (
+    id_sales INT AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(255) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    cash DECIMAL(10, 2) DEFAULT 0.00,
+    debit DECIMAL(10, 2) DEFAULT 0.00,
+    codigo VARCHAR(50) NOT NULL UNIQUE
+);
+
+

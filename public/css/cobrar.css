@@ -1,0 +1,117 @@
+.h1Header {
+    background-color: red;
+    color: azure;
+    border-bottom: 3px solid white;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+body {
+    background-color: red;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionCodigo {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#codigoProducto {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+#buscarProducto {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#buscarProducto:hover {
+    background-color: #ccc;
+}
+
+.sectionSumar {
+    border: 1px solid white;
+    color: azure;
+    font-size: 10px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h3 {
+    font-size: 15px;
+    margin: 0;
+    margin-top : 10px;
+    margin-left: 5px;
+}
+
+#productoNombreContainer, #productoPrecioContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espacio entre productos */
+    margin-top: 10px;
+    font-size: 10px; /* Mantener el tamaño que ya tenías */
+    margin-left: 5px;
+}
+
+#productoNombreContainer div, #productoPrecioContainer div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid white;
+    background-color: #ff4d4d;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: white;
+}
+
+#productoNombreContainer div:hover, #productoPrecioContainer div:hover {
+    background-color: #ff3333;
+}
+
+/* Estilos adicionales */
+.producto {
+    margin-bottom: 5px;
+}
+
+.cajaSections{
+    width: 100%;
+    display: flex;
+}
+
+.titulo{
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.total{
+    color: white;
+    border: 1px solid white;
+    width: 90.2%;
+    margin: 0;
+}
+
+h2{
+    margin: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.contTotal{
+    width: 100%;
+}
+

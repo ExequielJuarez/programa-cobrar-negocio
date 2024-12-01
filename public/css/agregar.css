@@ -1,0 +1,49 @@
+.h1Header{
+    background-color: red;
+    color: azure;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
+body{
+    background-color: red;
+}
+
+label{
+    color: azure;
+    font-size: 25px;
+    
+}
+
+form{
+    border-bottom: 1px solid azure;
+    border-top: 1px solid azure;
+    padding: 10px;
+}
+
+div{
+    margin: 5px;
+}
+
+h2{
+    color: azure;
+    text-align: center;
+}
+
+section{
+    width: 100%;
+
+}
+
+button{
+    margin-left: 5px;
+    padding: 5px;
+    border: 1px solid rgb(47, 120, 204);
+    border-radius: 15%;
+    color: aliceblue;
+    background-color: rgb(47, 120, 204);
+}
+
+input{
+    border: 1px solid white; 
+    padding: 5px;
+}
